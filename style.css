@@ -6,6 +6,7 @@
 
 html {
   background: #f3e6e6;
+  color: #444444;
   height: 100vh;
   width: 100%;
   font-size: 100%;
@@ -16,12 +17,162 @@ body {
   height: 100%;
 }
 
+header {
+  background: #b4a0a0;
+}
+
+.nav-ul {
+  display: grid;
+  grid-gap: 3px;
+  grid-template: auto/repeat(5, 1fr);
+  list-style: none;
+  padding: 1rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #444444;
+  cursor: pointer;
+}
+
 h1 {
   color: #040466;
 }
 
+.container {
+  padding: 1rem;
+}
+
+.main {
+  height: 100vh;
+}
+
+.text-main {
+  display: flex;
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  height: 50%;
+  display: grid;
+  grid-gap: 4px;
+  grid-template: repeat(4, 1fr)/repeat(6, 1fr);
+  grid-template-areas: "a b b b b c" "a d f f f c" "a d e e e c" "a d e e e c";
+  padding: 2rem;
+}
+
+.image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3bf5e;
+}
+
+.image-box:nth-child(1) {
+  grid-area: a;
+}
+
+.image-box:nth-child(2) {
+  grid-area: b;
+}
+
+.image-box:nth-child(3) {
+  grid-area: c;
+}
+
+.image-box:nth-child(4) {
+  grid-area: d;
+}
+
+.image-box:nth-child(5) {
+  grid-area: e;
+}
+
+.image-box:nth-child(6) {
+  grid-area: f;
+}
+
+.homepage {
+  height: 100vh;
+  display: grid;
+  grid-gap: 4px;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+}
+
 h2 {
   color: #222299;
+}
+
+.homepage h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.homepage-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.images-home {
+  display: grid;
+  grid-gap: 4px;
+  grid-template: auto/repeat(4, 1fr);
+  grid-template-areas: "a a e e" "a a e e" "f f b b" "f f b b" "c c g g" "c c g g" "h h d d" "h h d d";
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #6dc3a7;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-img-home-1 {
+  grid-area: a;
+}
+
+.box-img-home-2 {
+  grid-area: b;
+}
+
+.box-img-home-3 {
+  grid-area: c;
+}
+
+.box-img-home-4 {
+  grid-area: d;
+}
+
+.text-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-home-1 {
+  grid-area: e;
+}
+
+.text-home-2 {
+  grid-area: f;
+}
+
+.text-home-3 {
+  grid-area: g;
+}
+
+.text-home-4 {
+  grid-area: h;
 }
 
 h3 {
