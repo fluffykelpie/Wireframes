@@ -48,7 +48,6 @@ h1 {
     "a d f f f c"
     "a d e e e c"
     "a d e e e c";
-    padding: 2rem;
 }
 
 .image-box {
@@ -149,12 +148,6 @@ h2 {
     grid-area: d;
 }
 
-.text-home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .text-home-1 {
     grid-area: e;
 }
@@ -171,6 +164,18 @@ h2 {
     grid-area: h;
 }
 
+.about {
+    height: 100vh;
+    display: grid;
+    grid-gap: 4px;
+    grid-template: auto / auto;
+}
+
+.text-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 h3 {
     color: $header-h3;

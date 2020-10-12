@@ -6,7 +6,7 @@
 
 html {
   background: #f3e6e6;
-  color: #444444;
+  color: #383636;
   height: 100vh;
   width: 100%;
   font-size: 100%;
@@ -18,7 +18,7 @@ body {
 }
 
 header {
-  background: #b4a0a0;
+  background: #d6c3c3;
 }
 
 .nav-ul {
@@ -31,7 +31,7 @@ header {
 
 .nav-item a {
   text-decoration: none;
-  color: #444444;
+  color: #383636;
   cursor: pointer;
 }
 
@@ -60,14 +60,13 @@ h1 {
   grid-gap: 4px;
   grid-template: repeat(4, 1fr)/repeat(6, 1fr);
   grid-template-areas: "a b b b b c" "a d f f f c" "a d e e e c" "a d e e e c";
-  padding: 2rem;
 }
 
 .image-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f3bf5e;
+  background: #f5cc7f;
 }
 
 .image-box:nth-child(1) {
@@ -128,7 +127,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #6dc3a7;
+  background: #a1e2cc;
 }
 
 .description {
@@ -153,12 +152,6 @@ h2 {
   grid-area: d;
 }
 
-.text-home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .text-home-1 {
   grid-area: e;
 }
@@ -173,6 +166,19 @@ h2 {
 
 .text-home-4 {
   grid-area: h;
+}
+
+.about {
+  height: 100vh;
+  display: grid;
+  grid-gap: 4px;
+  grid-template: auto/auto;
+}
+
+.text-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h3 {
