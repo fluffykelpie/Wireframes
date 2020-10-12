@@ -93,6 +93,16 @@ h1 {
   grid-area: f;
 }
 
+.text-bottom-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .homepage {
   height: 100vh;
   display: grid;
@@ -103,11 +113,6 @@ h1 {
 
 h2 {
   color: #222299;
-}
-
-.homepage h2 {
-  display: flex;
-  justify-content: center;
 }
 
 .homepage-text {
@@ -292,11 +297,36 @@ h2 {
 }
 
 .btn-port {
-  border: 2px solid #000;
+  border: 2px solid #e4d8d8;
+  color: white;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
-  padding: 0.625rem 1.25rem;
+  padding: 0.625rem 2.25rem;
+  background: #ff98a9;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-text h2 {
+  padding: 2rem;
+}
+
+.btn-contact {
+  border: 2px solid #e4d8d8;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0.625rem 2.25rem;
   background: #ff98a9;
   margin-left: 1rem;
   cursor: pointer;
