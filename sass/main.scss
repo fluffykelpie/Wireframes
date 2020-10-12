@@ -1,1 +1,14 @@
 @import "reset";
+@import "variables";
+
+h1 {
+    color: $header-h1;
+}
+
+h2 {
+    color: $header-h2;
+}
+
+h3 {
+    color: $header-h3;
+}

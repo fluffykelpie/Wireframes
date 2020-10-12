@@ -5,7 +5,7 @@
 }
 
 html {
-  background: #fdf4f4;
+  background: #f3e6e6;
   height: 100vh;
   width: 100%;
   font-size: 100%;
@@ -14,6 +14,18 @@ html {
 body {
   width: 100%;
   height: 100%;
+}
+
+h1 {
+  color: #040466;
+}
+
+h2 {
+  color: #222299;
+}
+
+h3 {
+  color: #2b2ba1;
 }
 
 /*# sourceMappingURL=style.css.map */
