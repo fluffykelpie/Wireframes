@@ -134,6 +134,8 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #d89ea9;
+  text-align: center;
 }
 
 .box-img-home-1 {
@@ -179,6 +181,20 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.about-us {
+  text-align: center;
+}
+
+.team {
+  display: grid;
+  grid-gap: 10px;
+  grid-template: auto/repeat(2, 1fr);
+}
+
+.team-image {
+  background: #be5454;
 }
 
 h3 {
