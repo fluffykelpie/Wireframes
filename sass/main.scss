@@ -181,18 +181,131 @@ h2 {
 
 .about-us {
     text-align: center;
+    padding: 3rem;
 }
 
-.team{
+.team {
     display: grid;
-    grid-gap: 10px;
-    grid-template: auto / repeat(2, 1fr);
+    grid-gap: 40px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-template-areas: 
+    "a a b b c c"
+    "d d b b c c"
+    "e e b b f f";
 }
 
 .team-image{
     background: $team;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.team-image:nth-child(1){
+    grid-area: a;
+}
+
+.team-image:nth-child(2){
+    grid-area: b;
+}
+
+.team-image:nth-child(3){
+    grid-area: c;
+}
+
+.team-image:nth-child(4){
+    grid-area: d;
+}
+
+.team-image:nth-child(5){
+    grid-area: e;
+}
+
+.team-image:nth-child(6){
+    grid-area: f;
+}
+
+.portfolio {
+    height: 100vh;
+    display: grid;
+    grid-gap: 4px;
+    grid-template: auto / auto;
+}
+
+.images-portfolio {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto, 1fr);
+    grid-template-areas:
+    "a a a a a"
+    "b b e c c"
+    "b b e c c"
+    "d d e c c"
+    "d d e g g"
+    "f f f f f";
+}
+
+.portfolio-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-port {
+    background: $box-port;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-port:nth-child(1){
+    grid-area: a;
+}
+
+.box-port:nth-child(2){
+    grid-area: b;
+}
+
+.box-port:nth-child(3){
+    grid-area: c;
+}
+
+.box-port:nth-child(4){
+    grid-area: d;
+}
+
+.box-port:nth-child(5){
+    grid-area: e;
+}
+
+.box-port:nth-child(6){
+    grid-area: f;
+}
+
+.box-port:nth-child(7){
+    grid-area: g;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-port {
+    border: 2px solid #000;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0.625rem 1.25rem;
+    background: $button-project;
+    margin-left: 1rem;
+    cursor: pointer;
+}
 
 h3 {
     color: $header-h3;
